@@ -1,9 +1,5 @@
 FROM alpine
  
-RUN aprk add --update nodejs nodejs-npm
-
-RUN npm install -g http-server
-
 COPY . /src
 
 WORKDIR /src
